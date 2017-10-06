@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+</head>
+<body background="hd.png">
+	<font face=monospace color="white">
+    <center>
+      <form name="calculadora">
+      <h1>Calculadora</h1>
+         <input type="textfield" id="resultado" name="operacion" value="" required="number required" />
+      <table border="2">
+        <tr>
+         <div class="numbers">
+    		<td><button type="button" value="1" onclick="agregarNumber(this);">1</button></td>
+         	<td><button type="button" value="2" onclick="agregarNumber(this);">2</button></td>
+         	<td><button type="button" value="3" onclick="agregarNumber(this);">3</button></td>
+         </div>
+         	<td><button type="button" id="suma" value="+" onclick="agregarNumber(this);">+</button></td>
+        </tr>
+        <tr>
+         <div class="numbers">
+         	<td><button type="button" value="4" onclick="agregarNumber(this);">4</button></td>
+         	<td><button type="button" value="5" onclick="agregarNumber(this);">5</button></td>
+         	<td><button type="button" value="6" onclick="agregarNumber(this);">6</button></td>
+         </div>
+         	<td><button type="button" id="resta" value="-" onclick="agregarNumber(this);">-</button></td>
+        </tr>
+        <tr>
+         <div class="numbers">
+         	<td><button type="button" value="7" onclick="agregarNumber(this);">7</button></td>
+         	<td><button type="button" value="8" onclick="agregarNumber(this);">8</button></td>
+         	<td><button type="button" value="9" onclick="agregarNumber(this);">9</button></td>
+         </div>
+         	<td><button type="button" id="multiplicacion" value="*" onclick="agregarNumber(this);">*</button></td>
+        </tr>
+        <tr>
+         	<td><button type="button" value="." onclick="agregarNumber(this);">.</button></td>
+         <div class="numbers">
+         	<td><button type="button" value="0" onclick="agregarNumber(this);">0</button></td>
+         </div>
+         	<td><button type="button" id="igual" value="=" onclick="escribirResultado(this);">=</button></td>
+         	<td><button type="button" id="division" value="/" onclick="agregarNumber(this);">/</button></td>
+        </tr>
+       </table>
+       </form>
+       <script src="./js/javascript.js"></script>
+      </center>
+      
+</body>
+</html>
